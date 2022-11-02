@@ -1,4 +1,4 @@
-﻿namespace MISA.BLL
+﻿namespace CNPM.BLL
 {
     public class Class1
     {

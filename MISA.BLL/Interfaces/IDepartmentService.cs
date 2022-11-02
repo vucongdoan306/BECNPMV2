@@ -1,11 +1,11 @@
-﻿using MISA.Common.Entities;
+﻿using CNPM.Common.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MISA.BLL.Interfaces
+namespace CNPM.BLL.Interfaces
 {
     public interface IDepartmentService
     {

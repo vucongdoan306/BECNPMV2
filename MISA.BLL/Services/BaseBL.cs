@@ -1,17 +1,17 @@
-﻿using MISA.BLL.Interfaces;
-using MISA.Common;
-using MISA.Common.Entities;
-using MISA.Common.MISAAttribute;
-using MISA.Common.Resources;
-using MISA.DAL.BaseRepository;
-using MISA.DAL.Interface;
+﻿using CNPM.BLL.Interfaces;
+using CNPM.Common;
+using CNPM.Common.Entities;
+using CNPM.Common.MISAAttribute;
+using CNPM.Common.Resources;
+using CNPM.DAL.BaseRepository;
+using CNPM.DAL.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MISA.BLL.Services
+namespace CNPM.BLL.Services
 {
     public class BaseBL<MISAEntity> : IBaseService<MISAEntity>
     {

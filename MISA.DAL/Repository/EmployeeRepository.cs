@@ -1,4 +1,4 @@
-﻿using MISA.Common.Entities;
+﻿using CNPM.Common.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using MySqlConnector;
-using MISA.DAL.BaseRepository;
-using MISA.Common.Handle;
-using MISA.DAL.Interface;
+using CNPM.DAL.BaseRepository;
+using CNPM.Common.Handle;
+using CNPM.DAL.Interface;
 
-namespace MISA.DAL.Repository
+namespace CNPM.DAL.Repository
 {
     public class EmployeeRepository : BaseRepository<Employee>,IEmployeeRepository
     {

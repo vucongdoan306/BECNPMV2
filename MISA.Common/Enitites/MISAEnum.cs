@@ -1,4 +1,4 @@
-﻿namespace MISA.Common.Entities
+﻿namespace CNPM.Common.Entities
 {
     /// <summary>
     /// Enum giới tính

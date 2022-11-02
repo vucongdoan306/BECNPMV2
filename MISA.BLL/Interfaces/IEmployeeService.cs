@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
-using MISA.Common.Entities;
-using MISA.Common.Excels;
+using CNPM.Common.Entities;
+using CNPM.Common.Excels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MISA.BLL.Interfaces
+namespace CNPM.BLL.Interfaces
 {
     public interface IEmployeeService
     {

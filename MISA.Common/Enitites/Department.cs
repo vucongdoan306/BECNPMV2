@@ -1,7 +1,7 @@
-﻿using MISA.Common.MISAAttribute;
+﻿using CNPM.Common.MISAAttribute;
 
 
-namespace MISA.Common.Entities
+namespace CNPM.Common.Entities
 {
     public class Department
     {

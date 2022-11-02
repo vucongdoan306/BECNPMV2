@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MISA.Common.Excels
+namespace CNPM.Common.Excels
 {
     public class ExcelExport
     {

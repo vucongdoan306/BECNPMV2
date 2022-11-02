@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MISA.Common
+namespace CNPM.Common
 {
     public class MISAException : Exception
     {

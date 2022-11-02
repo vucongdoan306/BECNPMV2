@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MISA.BLL.Interfaces;
-using MISA.BLL.Services;
-using MISA.Common;
-using MISA.Common.Entities;
-using MISA.Common.Resources;
-using MISA.DAL.Repository;
+using CNPM.BLL.Interfaces;
+using CNPM.BLL.Services;
+using CNPM.Common;
+using CNPM.Common.Entities;
+using CNPM.Common.Resources;
+using CNPM.DAL.Repository;
 
-namespace MISA.W06.CukCuk.Controllers
+namespace CNPM.W06.CukCuk.Controllers
 {
     [Route("api/v2/[controller]")]
     [ApiController]

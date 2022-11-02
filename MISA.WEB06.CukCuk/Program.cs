@@ -1,10 +1,10 @@
 
-using MISA.BLL.Interfaces;
-using MISA.BLL.Services;
-using MISA.Common.Entities;
-using MISA.DAL.BaseRepository;
-using MISA.DAL.Interface;
-using MISA.DAL.Repository;
+using CNPM.BLL.Interfaces;
+using CNPM.BLL.Services;
+using CNPM.Common.Entities;
+using CNPM.DAL.BaseRepository;
+using CNPM.DAL.Interface;
+using CNPM.DAL.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 

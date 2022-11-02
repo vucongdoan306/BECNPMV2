@@ -1,16 +1,16 @@
-﻿using MISA.BLL.Interfaces;
-using MISA.Common;
-using MISA.Common.Entities;
-using MISA.Common.Resources;
-using MISA.DAL.Interface;
-using MISA.DAL.Repository;
+﻿using CNPM.BLL.Interfaces;
+using CNPM.Common;
+using CNPM.Common.Entities;
+using CNPM.Common.Resources;
+using CNPM.DAL.Interface;
+using CNPM.DAL.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MISA.BLL.Services
+namespace CNPM.BLL.Services
 {
     public class DepartmentBL:BaseBL<Department>,IDepartmentService
     {

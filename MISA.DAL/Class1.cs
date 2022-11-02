@@ -1,4 +1,4 @@
-﻿namespace MISA.DAL
+﻿namespace CNPM.DAL
 {
     public class Class1
     {

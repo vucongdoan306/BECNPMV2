@@ -1,17 +1,17 @@
-﻿using MISA.Common;
+﻿using CNPM.Common;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MISA.DAL.BaseRepository;
+using CNPM.DAL.BaseRepository;
 using Dapper;
 using MySqlConnector;
-using MISA.Common.Entities;
-using MISA.DAL.Interface;
+using CNPM.Common.Entities;
+using CNPM.DAL.Interface;
 
-namespace MISA.DAL.Repository
+namespace CNPM.DAL.Repository
 {
     public class DepartmentRepository : BaseRepository<Department>, IDepartmentRepository
     {

@@ -1,4 +1,4 @@
-﻿namespace MISA.BLL.Services
+﻿namespace CNPM.BLL.Services
 {
     public class ErrorService
     {

@@ -1,9 +1,9 @@
 ﻿
 
-using MISA.Common.MISAAttribute;
+using CNPM.Common.MISAAttribute;
 using System.ComponentModel;
 
-namespace MISA.Common.Entities { 
+namespace CNPM.Common.Entities { 
     public class Employee
     {
         /// <summary>

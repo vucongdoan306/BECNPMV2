@@ -1,4 +1,4 @@
-﻿namespace MISA.WEB06.CukCuk.Interfaces
+﻿namespace CNPM.WEB06.CukCuk.Interfaces
 {
     public interface IBaseController
     {

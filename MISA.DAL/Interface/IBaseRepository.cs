@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MISA.DAL.Interface
+namespace CNPM.DAL.Interface
 {
     public interface IBaseRepository<MISAEntity>
     {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MISA.WEB06.CukCuk.Interfaces;
+using CNPM.WEB06.CukCuk.Interfaces;
 
-namespace MISA.WEB06.CukCuk.Controllers
+namespace CNPM.WEB06.CukCuk.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

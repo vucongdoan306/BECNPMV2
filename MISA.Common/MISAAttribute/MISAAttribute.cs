@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MISA.Common.MISAAttribute
+namespace CNPM.Common.MISAAttribute
 {
     /// <summary>
     /// Thuộc tính bắt buộc nhập

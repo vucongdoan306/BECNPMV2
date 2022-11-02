@@ -14,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MISA.BLL\MISA.BLL.csproj" />
-    <ProjectReference Include="..\MISA.Common\MISA.Common.csproj" />
-    <ProjectReference Include="..\MISA.DAL\MISA.DAL.csproj" />
+    <ProjectReference Include="..\MISA.BLL\CNPM.BLL.csproj" />
+    <ProjectReference Include="..\MISA.Common\CNPM.Common.csproj" />
+    <ProjectReference Include="..\MISA.DAL\CNPM.DAL.csproj" />
   </ItemGroup>
 
 </Project>

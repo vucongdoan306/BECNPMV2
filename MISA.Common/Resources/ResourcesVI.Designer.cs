@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MISA.Common.Resources {
+namespace CNPM.Common.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MISA.Common.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MISA.Common.Resources.ResourcesVI", typeof(ResourcesVI).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CNPM.Common.Resources.ResourcesVI", typeof(ResourcesVI).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

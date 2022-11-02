@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using MySqlConnector;
 using Dapper;
 using System.Data;
-using MISA.DAL.Interface;
+using CNPM.DAL.Interface;
 
-namespace MISA.DAL.BaseRepository
+namespace CNPM.DAL.BaseRepository
 {
     public class BaseRepository<MISAEntity> :IDisposable,IBaseRepository<MISAEntity>
     {
