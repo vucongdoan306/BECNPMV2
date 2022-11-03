@@ -25,7 +25,7 @@ namespace CNPM.DAL.BaseRepository
 
             _connectionString = @"Host=localhost; " +
                             "Port=3306; " +
-                            "Database=DBCNPM; " +
+                            "Database=dbcnpm; " +
                             "User Id=root; " +
                             "Password=123456";
             _connection = new MySqlConnection(_connectionString);
