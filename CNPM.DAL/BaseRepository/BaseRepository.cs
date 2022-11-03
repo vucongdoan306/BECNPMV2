@@ -31,7 +31,7 @@ namespace CNPM.DAL.BaseRepository
             _connection = new MySqlConnection(_connectionString);
             if(_connection.State == ConnectionState.Closed)
             {
-                _connection.Open();
+                _connection.Open(); 
             }
         }
 
