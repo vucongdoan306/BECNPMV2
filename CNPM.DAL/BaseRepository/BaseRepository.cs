@@ -19,7 +19,7 @@ namespace CNPM.DAL.BaseRepository
         /// <summary>
         /// Hàm khởi tạo
         /// </summary>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public BaseRepository()
         {
 
@@ -38,7 +38,7 @@ namespace CNPM.DAL.BaseRepository
         /// <summary>
         /// Hàm hủy kết nối 
         /// </summary>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public void Dispose()
         {
             _connection.Close();
@@ -51,7 +51,7 @@ namespace CNPM.DAL.BaseRepository
         /// <returns>
         /// Toàn bộ bản ghi
         /// </returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public IEnumerable<CNPMEntity> GetAll()
         {
 
@@ -71,7 +71,7 @@ namespace CNPM.DAL.BaseRepository
         /// <returns>
         /// Bản ghi theo id
         /// </returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public IEnumerable<CNPMEntity> GetById(Guid id)
         {  
             var sql = $"SELECT * FROM View_{className} WHERE {className}Id = @Id";
@@ -87,7 +87,7 @@ namespace CNPM.DAL.BaseRepository
         /// </summary>
         /// <param name="entity">Object</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public int Insert(CNPMEntity entity)
         {
             using (var transaction = _connection.BeginTransaction())
@@ -112,7 +112,7 @@ namespace CNPM.DAL.BaseRepository
         /// </summary>
         /// <param name="entity">Object</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public int Update(CNPMEntity entity)
         {
             using (var transaction = _connection.BeginTransaction())
@@ -136,7 +136,7 @@ namespace CNPM.DAL.BaseRepository
         /// </summary>
         /// <param name="id">id của bản ghi</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public int Delete(Guid id)
         {
             using(var transaction = _connection.BeginTransaction()) { 
@@ -159,7 +159,7 @@ namespace CNPM.DAL.BaseRepository
         /// Hàm lấy ra toàn bộ id
         /// </summary>
         /// <returns>toàn bộ id</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public IEnumerable<Guid> GetAllId()
         {
             var sql = $"SELECT {className}Id From {className}";
@@ -172,7 +172,7 @@ namespace CNPM.DAL.BaseRepository
         /// Hàm lấy ra toàn bộ code
         /// </summary>
         /// <returns>toàn bộ code</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public IEnumerable<string> GetAllCode()
         {
             var sql = $"SELECT {className}Code FROM {className}";
@@ -188,7 +188,7 @@ namespace CNPM.DAL.BaseRepository
         /// <param name="pageSize">Số bản ghi trên một trang</param>
         /// <param name="pageNumber">Chỉ số trang</param>
         /// <returns>Class chứ data phân trang</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public object Filter(string? searchText, int pageSize, int pageNumber)
         {
             

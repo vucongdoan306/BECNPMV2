@@ -25,7 +25,7 @@ namespace CNPM.BLL.Services
         /// <summary>
         /// Khai báo interface của EmployeeRepository, BaseBL, DepartmentRepository
         /// </summary>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
         IEmployeeRepository _repository;
         IBaseService<Employee> _baseService;
         IDepartmentRepository _departmentRepository;
@@ -36,7 +36,7 @@ namespace CNPM.BLL.Services
         /// <param name="repository">Interface IEmployeeRepository</param>
         /// <param name="baseService">Interface IBaseService<Employee></param>
         /// <param name="departmentRepository">Interface IDepartmentRepository</param>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
         public EmployeeBL(IEmployeeRepository repository, IBaseService<Employee> baseService, IDepartmentRepository departmentRepository)
         {
             _repository = repository;
@@ -48,7 +48,7 @@ namespace CNPM.BLL.Services
         /// Lấy ra tất cả bản ghi trong bảng Employee
         /// </summary>
         /// <returns>Tất cả bản ghi trong bảng Employee</returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
         public IEnumerable<Employee> GetAll()
         {
             var data = _repository.GetAll();
@@ -60,7 +60,7 @@ namespace CNPM.BLL.Services
         /// </summary>
         /// <param name="employeeId">Id của Employee</param>
         /// <returns>bản ghi ra theo Id của Employee</returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
         public IEnumerable<Employee> GetById(Guid employeeId)
         {
             var data = _repository.GetById(employeeId);
@@ -71,7 +71,7 @@ namespace CNPM.BLL.Services
         /// Thực hiện lấy ra toàn bộ mã nhân viên
         /// </summary>
         /// <returns>toàn bộ mã nhân viên</returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
         public IEnumerable<string> GetAllCode()
         {
             var data = _repository.GetAllCode();
@@ -82,7 +82,7 @@ namespace CNPM.BLL.Services
         /// Thực hiện tạo ra một mã nhân viên mới không trùng
         /// </summary>
         /// <returns>Mã nhân viên mới không trùng</returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
         public string GetNewEmployeeCodeService()
         {
 
@@ -106,7 +106,7 @@ namespace CNPM.BLL.Services
         /// <param name="pageSize">Số bản ghi trên 1 trang</param>
         /// <param name="pageNumber">Chỉ số trang</param>
         /// <returns>Tổng số bản ghi, bản ghi bắt đầu, bản ghi kết thúc</returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
         public object EmployeeFiler(string? searchText, int pageSize, int pageNumber)
         {
             var data = _repository.Filter(searchText, pageSize, pageNumber);
@@ -122,7 +122,7 @@ namespace CNPM.BLL.Services
         /// true - không có lỗi
         /// false - có lỗi
         /// </returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
 
         protected override bool ValidateCustom(Employee entity, ActivityMode mode)
         {
@@ -194,7 +194,7 @@ namespace CNPM.BLL.Services
         /// true - Tồn tại bản ghi trong bảng
         /// false - Không tồn tại bản ghi trong bảng
         /// </returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
         protected override bool ValidateCustom(Guid id, ActivityMode mode)
         {
             if (_repository.CheckExistEmployeeId(id) == false)
@@ -213,7 +213,7 @@ namespace CNPM.BLL.Services
         /// true - Email đúng định dạng
         /// false - Email sai định dạng
         /// </returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
 
         public bool ValidateEmail(string email)
         {
@@ -236,7 +236,7 @@ namespace CNPM.BLL.Services
         /// <returns>
         /// Số bản ghi thay đổi trong database
         /// </returns>
-        /// CreatedBy: Công Đoàn (10/08/2022)
+        /// CreatedBy: Công Đoàn
         public int ImportEmployeesService(IFormFile formFile)
         {
             // Kiểm tra tệp có đúng định dạng không (.xls, .xlsx)
@@ -317,7 +317,7 @@ namespace CNPM.BLL.Services
         /// <returns>
         /// File excel chứa data
         /// </returns>
-        /// CreatedBy: Công Đoàn (10/08/2022)
+        /// CreatedBy: Công Đoàn
         public ExcelExport Export()
         {
             List<Employee> employees = _repository.GetAll().ToList();
@@ -408,7 +408,7 @@ namespace CNPM.BLL.Services
         /// </summary>
         /// <param name="employeesId">List id của nhân viên</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         public int DeleteMultiEmployee(List<Guid> employeesId)
         {
             if(employeesId == null)

@@ -34,7 +34,7 @@ namespace CNPM.DAL.Repository
         /// false - nếu không tồn tại
         /// true - nếu tồn tại
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         public bool CheckEmployeeCode(string employeeCode, Guid id, ActivityMode mode)
         {
             if (mode == ActivityMode.PutMode)
@@ -55,7 +55,7 @@ namespace CNPM.DAL.Repository
         /// true - trùng
         /// false - không trùng
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         public bool CheckDuplicateEmployeeCode(string employeeCode)
         {
             var sqlCheck = "SELECT EmployeeCode From Employee WHERE EmployeeCode = @EmployeeCode";
@@ -81,7 +81,7 @@ namespace CNPM.DAL.Repository
         /// true - trùng
         /// false - không trùng
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         public bool CheckPutEmployeeCode(string employeeCode, Guid id)
         {
             var sql = $"SELECT EmployeeCode From Employee WHERE EmployeeId = @EmployeeId";
@@ -103,7 +103,7 @@ namespace CNPM.DAL.Repository
         /// true - tồn tại
         /// false - không tồn tại
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         public bool CheckExistEmployeeId(Guid id)
         {
             var sql = $"SELECT EmployeeCode From Employee WHERE EmployeeId = @EmployeeId";
@@ -122,7 +122,7 @@ namespace CNPM.DAL.Repository
         /// </summary>
         /// <param name="employees">List Object Employee</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         public int ImportEmployee(List<Employee> employees)
         {
             var rowInserted = 0;
@@ -151,7 +151,7 @@ namespace CNPM.DAL.Repository
         /// </summary>
         /// <param name="employeesId">List id của nhân viên</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         public int DeleteMultiEmployee(List<Guid> employeesId)
         {
             using(var transaction = _connection.BeginTransaction())

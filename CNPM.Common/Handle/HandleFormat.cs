@@ -24,7 +24,7 @@ namespace CNPM.Common.Handle
         /// <returns>
         /// list string gồm số
         /// </returns>
-        /// CreatedBy: Công Đoàn (10/08/2022)
+        /// CreatedBy: Công Đoàn 
         public static List<string> GetListNumberFromString(List<string> listText)
         {
             List<string> listNumber = new List<string>();
@@ -47,7 +47,7 @@ namespace CNPM.Common.Handle
         /// <returns>
         /// số lớn nhất
         /// </returns>
-        /// CreatedBy: Công Đoàn (10/08/2022)
+        /// CreatedBy: Công Đoàn 
         public static double GetMaxNumberFromList(List<string> listNumber)
         {
             var max = Double.Parse(listNumber[0]);
@@ -66,7 +66,7 @@ namespace CNPM.Common.Handle
         /// </summary>
         /// <param name="text">Tên giới tính</param>
         /// <returns>Giới tính</returns>
-        /// CreatedBy: Công Đoàn (10/08/2022)
+        /// CreatedBy: Công Đoàn 
         public static Gender? FormatGerderFromString(string? text)
         {
             if (string.IsNullOrEmpty(text))
@@ -89,7 +89,7 @@ namespace CNPM.Common.Handle
         /// </summary>
         /// <param name="text">Object</param>
         /// <returns>Chuỗi được convert từ object</returns>
-        /// CreatedBy: Công Đoàn (10/08/2022)
+        /// CreatedBy: Công Đoàn 
         public static string? FormatObjectToString(object? text)
         {
             return text == null ? String.Empty : text.ToString();
@@ -100,7 +100,7 @@ namespace CNPM.Common.Handle
         /// </summary>
         /// <param name="value">Object</param>
         /// <returns>DAtetime</returns>
-        /// CreatedBy: Công Đoàn (10/08/2022)
+        /// CreatedBy: Công Đoàn 
         public static DateTime? FormatObjectToDateTime(object? value)
         {
             if(value == null)

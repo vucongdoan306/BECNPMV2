@@ -14,7 +14,7 @@ namespace CNPM.DAL.Interface
         /// <returns>
         /// Toàn bộ bản ghi
         /// </returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         IEnumerable<CNPMEntity> GetAll();
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace CNPM.DAL.Interface
         /// <returns>
         /// Bản ghi theo id
         /// </returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         IEnumerable<CNPMEntity> GetById(Guid id);
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace CNPM.DAL.Interface
         /// </summary>
         /// <param name="entity">Object</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         int Insert(CNPMEntity entity);
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace CNPM.DAL.Interface
         /// </summary>
         /// <param name="entity">Object</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         int Update(CNPMEntity entity);
 
         /// <summary>
@@ -48,21 +48,21 @@ namespace CNPM.DAL.Interface
         /// </summary>
         /// <param name="id">id của bản ghi</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         int Delete(Guid id);
 
         /// <summary>
         /// Hàm lấy ra toàn bộ id
         /// </summary>
         /// <returns>toàn bộ id</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         IEnumerable<Guid> GetAllId();
 
         /// <summary>
         /// Hàm lấy ra toàn bộ code
         /// </summary>
         /// <returns>toàn bộ code</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         IEnumerable<string> GetAllCode();
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace CNPM.DAL.Interface
         /// <param name="pageSize">Số bản ghi trên một trang</param>
         /// <param name="pageNumber">Chỉ số trang</param>
         /// <returns>Trả về data, số trang, phân trang</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         object Filter(string? searchText, int pageSize, int pageNumber);
     }
 }

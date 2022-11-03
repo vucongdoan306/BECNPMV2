@@ -25,7 +25,7 @@ namespace CNPM.BLL.Services
         /// </summary>
         /// <param name="repository">IDepartmentRepository</param>
         /// <param name="baseService">IBaseService<Department></param>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
         public DepartmentBL(IDepartmentRepository repository,IBaseService<Department> baseService)
         {
             _repository = repository;
@@ -38,7 +38,7 @@ namespace CNPM.BLL.Services
         /// <returns>
         /// Toàn bộ danh sách department
         /// </returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn
         public IEnumerable<Department> GetAll()
         {
             var data = _repository.GetAll();
@@ -52,7 +52,7 @@ namespace CNPM.BLL.Services
         /// <returns>
         /// 1 bản ghi của department lấy theo Id
         /// </returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn 
         public IEnumerable<Department> GetById(Guid departmentId)
         {
             var data = _repository.GetById(departmentId);
@@ -69,7 +69,7 @@ namespace CNPM.BLL.Services
         /// true - không có lỗi
         /// false - có lỗi
         /// </returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn 
         protected override bool ValidateCustom(Department entity, ActivityMode mode)
         {
             if(entity.DepartmentCode.Length > 20)
@@ -94,7 +94,7 @@ namespace CNPM.BLL.Services
         /// true - tồn tại bản ghi muốn xóa
         /// false - không tồn tại bản ghi muốn xóa
         /// </returns>
-        /// CreateBy: Công Đoàn (08/08/2022)
+        /// CreateBy: Công Đoàn 
         protected override bool ValidateCustom(Guid id, ActivityMode mode)
         {
             if (_repository.CheckExistDepartmentId(id) == false)
