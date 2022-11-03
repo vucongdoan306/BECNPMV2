@@ -13,7 +13,7 @@ namespace CNPM.BLL.Interfaces
         /// </summary>
         /// <param name="entity">Object</param>
         /// <returns>
-        /// Số bản ghi thay đổi
+        /// Số bản ghi thay đổiii
         /// </returns>
         int InsertService(CNPMEntity entity);
 
