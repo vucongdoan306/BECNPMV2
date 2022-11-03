@@ -34,7 +34,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// Toàn bộ bản ghi và statuscode
         /// Error - Thông báo lỗi và statuscode
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         [HttpGet]
         public IActionResult Get()
         {
@@ -58,7 +58,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// Bản ghi được lấy ra theo Id
         /// Error - Thông báo lỗi và statuscode
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         [HttpGet("{employeeId}")]
         public IActionResult getById(Guid employeeId)
         {
@@ -82,7 +82,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// Số bản ghi thay đổi và statuscode
         /// Error - Thông báo lỗi và statuscode
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         [HttpPost]
         public IActionResult Insert(Employee employee)
         {
@@ -107,7 +107,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// Số bản ghi thay đỏi và statuscode
         /// Error - Thông báo lỗi và statuscode
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         [HttpPut("{employeeId}")]
         public IActionResult Update(Employee employee, Guid employeeId)
         {
@@ -132,7 +132,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// Số bản ghi thay đổi và statuscode
         /// Error - Thông báo lỗi và statuscode
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         [HttpDelete("{employeeId}")]
         public IActionResult Delete(Guid employeeId)
         {
@@ -154,7 +154,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// Mã nhân viên mới
         /// Error - Thông báo lỗi và statuscode
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         [HttpGet("NewEmployeeCode")]
         public IActionResult GetNewEmployeeCode()
         {
@@ -178,7 +178,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// Số bản ghi, tổng số bản ghi, bản ghi bắt đầu và bản ghi kết thúc
         /// Error - Thông báo lỗi và statuscode
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         [HttpGet("Filter")]
         public IActionResult Filter(string? searchText, int pageSize, int pageNumber)
         {
@@ -197,7 +197,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// </summary>
         /// <param name="fileImport">File excel</param>
         /// <returns> Số bản ghi thay đổi trong database</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         [HttpPost("Import")]
         public IActionResult Import(IFormFile fileImport)
         {
@@ -215,7 +215,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// Thực hiện xuất database ra excel
         /// </summary>
         /// <returns>File excel chứa database</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         [HttpGet("Export")]
         public IActionResult Export()
         {
@@ -234,7 +234,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// </summary>
         /// <param name="employeesId">Danh sách mã nhân viên</param>
         /// <returns>Số bản ghi ảnh hưởng</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         [HttpDelete("DeleteMulti")]
         public IActionResult DeleteMulti(List<Guid> employeesId)
         {
@@ -255,7 +255,7 @@ namespace CNPM.W06.CukCuk.Controllers
         /// <returns>
         /// Lỗi được handle và statuscode
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Nguyễn Quang Linh (30/10/2022)
         private IActionResult HandleException(Exception ex)
         {
             var res = new ErrorService();
