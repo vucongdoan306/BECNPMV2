@@ -98,7 +98,7 @@ namespace CNPM.BLL.Services
         /// <param name="entity">Object</param>
         /// <returns>
         /// true - Không có lỗi
-        /// false - có lỗi
+        /// false - có lỗi 
         /// </returns>
         public bool Validate(CNPMEntity entity)
         {
