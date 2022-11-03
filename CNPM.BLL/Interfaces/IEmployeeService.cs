@@ -17,7 +17,7 @@ namespace CNPM.BLL.Interfaces
         /// <returns>
         /// Tất cả số bản ghi
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         IEnumerable<Employee> GetAll();
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace CNPM.BLL.Interfaces
         /// </summary>
         /// <param name="employeeId">id của employee</param>
         /// <returns>bản ghi được lấy ra theo id</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         IEnumerable<Employee> GetById(Guid employeeId);
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace CNPM.BLL.Interfaces
         /// </summary>
         /// <param name="employee">Object</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
 
         int InsertService(Employee employee);
 
@@ -45,7 +45,7 @@ namespace CNPM.BLL.Interfaces
         /// <returns>
         /// Số bản ghi thay đổi
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         int UpdateService(Employee employee);
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace CNPM.BLL.Interfaces
         /// <returns>
         /// Số bản ghi thay đổi
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         int DeleteService(Guid employeetId);
 
         /// <summary>
@@ -64,14 +64,14 @@ namespace CNPM.BLL.Interfaces
         /// <returns>
         /// Toàn bộ mã nhân viên
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         IEnumerable<string> GetAllCode();
 
         /// <summary>
         /// Tạo một mã nhân viên mới
         /// </summary>
         /// <returns>Mã nhân viên mới</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         string GetNewEmployeeCodeService();
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace CNPM.BLL.Interfaces
         /// <returns>
         /// Object(Tổng số bản ghi, tổng số trang, bản ghi)
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         object EmployeeFiler(string? searchText, int pageSize, int pageNumber);
 
         /// <summary>
@@ -93,7 +93,7 @@ namespace CNPM.BLL.Interfaces
         /// <returns>
         /// Số bản ghi thay đổi trong database
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         int ImportEmployeesService(IFormFile fileImport);
 
         /// <summary>
@@ -102,7 +102,7 @@ namespace CNPM.BLL.Interfaces
         /// <returns>
         /// File excel chứa data
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         ExcelExport Export();
 
         /// <summary>
@@ -110,7 +110,7 @@ namespace CNPM.BLL.Interfaces
         /// </summary>
         /// <param name="employeesId">List id của nhân viên</param>
         /// <returns>Số bản ghi thay đổi</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn
         int DeleteMultiEmployee(List<Guid> employeesId);
     }
 }

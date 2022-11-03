@@ -21,7 +21,7 @@ namespace CNPM.DAL.Repository
         /// Hàm khởi tạo
         /// </summary>
         /// <param name="repository">Interface của baseRepo</param>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public DepartmentRepository(IBaseRepository<Department> repository)
         {
             _repository = repository;
@@ -32,7 +32,7 @@ namespace CNPM.DAL.Repository
         /// </summary>
         /// <param name="departmentName">Tên phòng ban</param>
         /// <returns>Id của phòng ban</returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public Guid GetIdFromName(string? departmentName)
         {
             var storeName = $"Proc_SearchDepartmentName";
@@ -53,7 +53,7 @@ namespace CNPM.DAL.Repository
         /// true - tồn tại
         /// false - không tồn tại
         /// </returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public bool CheckDepartmentCode(string departmentCode, Guid id, ActivityMode mode)
         {
             if(mode == ActivityMode.PutMode)
@@ -75,7 +75,7 @@ namespace CNPM.DAL.Repository
         /// true - trùng 
         /// false - không trùng
         /// </returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public bool CheckDuplicateDepartmentCode(string departmentCode)
         {
             var sqlCheck = "SELECT DepartmentCode From Department WHERE DepartmentCode = @DepartmentCode";
@@ -103,7 +103,7 @@ namespace CNPM.DAL.Repository
         /// true - trùng 
         /// false - không trùng
         /// </returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public bool CheckPutDepartmentCode(string departmentCode, Guid id)
         {
             var sql = $"SELECT DepartmentCode From Department WHERE DepartmentId = @DepartmentId";
@@ -126,7 +126,7 @@ namespace CNPM.DAL.Repository
         /// true - tồn tại
         ///  false - không tồn tại
         /// </returns>
-        /// CreatedBy: Công Đoàn (07/07/2022)
+        /// CreatedBy: Công Đoàn 
         public bool CheckExistDepartmentId(Guid id)
         {
             var sql = $"SELECT DepartmentCode From Department WHERE DepartmentId = @DepartmentId";

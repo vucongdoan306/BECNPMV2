@@ -15,7 +15,7 @@ namespace CNPM.DAL.Interface
         /// <returns>
         /// Toàn bộ nhân viên
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         IEnumerable<Employee> GetAll();
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace CNPM.DAL.Interface
         /// <returns>
         /// Bản ghi được lấy ra theo Id
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         IEnumerable<Employee> GetById(Guid employeeId);
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace CNPM.DAL.Interface
         /// <returns>
         /// Số bản ghi phải thay đổi
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         int Insert(Employee employee);
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace CNPM.DAL.Interface
         /// <returns>
         /// Số bản ghi được thay đổi
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         int Update(Employee employee);
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace CNPM.DAL.Interface
         /// <returns>
         /// Số bản ghi được thay đổi
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         int Delete(Guid employeeId);
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace CNPM.DAL.Interface
         /// <returns>
         /// Toàn bộ code của employee
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         IEnumerable<string> GetAllCode();
 
         /// <summary>
@@ -74,7 +74,7 @@ namespace CNPM.DAL.Interface
         /// <param name="pageSize">Số bản ghi trên một trang</param>
         /// <param name="pageNumber">Chỉ số trang</param>
         /// <returns>Object(Tổng số bản ghi, tổng số trang, data phân trang)</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         object Filter(string? searchText, int pageSize, int pageNumber);
 
         /// <summary>
@@ -87,7 +87,7 @@ namespace CNPM.DAL.Interface
         /// false - nếu không tồn tại
         /// true - nếu tồn tại
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         bool CheckEmployeeCode(string employeeCode, Guid id, ActivityMode mode);
 
         /// <summary>
@@ -98,7 +98,7 @@ namespace CNPM.DAL.Interface
         /// true - trùng
         /// false - không trùng
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         bool CheckDuplicateEmployeeCode(string employeeCode);
 
         /// <summary>
@@ -110,7 +110,7 @@ namespace CNPM.DAL.Interface
         /// true - trùng
         /// false - không trùng
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         bool CheckPutEmployeeCode(string employeeCode, Guid id);
 
         /// <summary>
@@ -121,7 +121,7 @@ namespace CNPM.DAL.Interface
         /// true - tồn tại
         /// false - không tồn tại
         /// </returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         bool CheckExistEmployeeId(Guid id);
 
         /// <summary>
@@ -129,7 +129,7 @@ namespace CNPM.DAL.Interface
         /// </summary>
         /// <param name="employees">Object Employee</param>
         /// <returns>Số bản ghi được thêm vào database</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         int ImportEmployee(List<Employee> employees);
 
         /// <summary>
@@ -137,7 +137,7 @@ namespace CNPM.DAL.Interface
         /// </summary>
         /// <param name="employeesId">List id nhân viên cần xóa</param>
         /// <returns>Số bản ghi được xóa</returns>
-        /// CreatedBy: Công Đoàn (08/08/2022)
+        /// CreatedBy: Công Đoàn 
         int DeleteMultiEmployee(List<Guid> employeesId);
     }
 }

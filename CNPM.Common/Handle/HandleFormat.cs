@@ -78,7 +78,7 @@ namespace CNPM.Common.Handle
                 case "nam":
                     return Gender.Male;
                 case "nữ":
-                    return Gender.Female;
+                    return Gender.Female; 
                 default:
                     return Gender.Other;
             }
