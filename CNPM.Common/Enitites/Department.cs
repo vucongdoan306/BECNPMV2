@@ -25,7 +25,7 @@ namespace CNPM.Common.Entities
         [CNPMRequired]
         [PropertyNameDisplay("Tên phòng ban")]
         [MaxLength(255)]
-        public string? DepartmentName { get; set; }
+        public string? DepartmentName { get; set; } 
 
         /// <summary>
         /// Ngày tạo
